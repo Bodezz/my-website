@@ -1172,7 +1172,26 @@ footer p{
 } 
 
 /* waves */ 
-
+@keyframes wave_1 {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes wave_2 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
  footer .wave{
      position: absolute;
      top: -100px;
@@ -1206,26 +1225,7 @@ footer .wave#wave4 {
     bottom: 20px;
     animation: wave_2 3s linear infinite;
 }
-@keyframes wave_1 {
-    0%
-    {
-        background-position-x: 1000px;
-    }
-    100%
-    {
-        background-position-x: 0px;
-    }
-}
-@keyframes wave_2 {
-    0%
-    {
-        background-position-x: 0px;
-    }
-    100%
-    {
-        background-position-x: 1000px;
-    }
-}
+
 
 
 /* Mid----------------------- */
