@@ -1,0 +1,627 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100hv;
+    width: 100%;
+    background-color: #e6f3ff;
+    background: url(images/2f.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.cardd-red {
+    background-color: rgba(73, 255, 255, 0.336);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.cardd:hover{
+    transform: scale(1.1);
+}
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card-red {
+    background-color: rgb(255, 0, 0);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card-red:hover{
+    transform: scale(1.1);
+}
+.card-orange {
+    background-color: orange;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card-orange:hover{
+    transform: scale(1.1);
+}
+.card-yellow {
+    background-color: yellow;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card-yellow:hover{
+    transform: scale(1.1);
+}
+.card-green{
+    background-color: green;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card-green:hover{
+    transform: scale(1.1);
+}
+.card-blue:hover{
+    transform: scale(1.1);
+}
+.card-blue{
+    background-color: blue;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card-pink{
+    background-color: pink;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card-pink:hover{
+    transform: scale(1.1);
+}
+.card-black{
+    background-color: black;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card-black:hover{
+    transform: scale(1.1);
+}
+.icon {
+    color: #3a6cf4;
+    font-size: 4em;
+    text-align: center;   
+}
+.iconn {
+    color: #00ff73;
+    font-size: 6em;
+    text-align: center;   
+}
+.carde {
+    background-color: blue;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    clip-path: polygon(0% 0%, 0% 100%, 45% 100%, 100% 100%, 100% 0%);
+    width: 200px;
+    height: 160px;
+    margin-left: 95px;
+}
+
+
+.carde:hover {
+    transform: scale(1.1);
+}
+.cardee {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    clip-path: circle(50% at 50% 50%);
+    width: 200px;
+    height: 200px;
+    margin-left: 95px;
+}
+
+.cardee:hover{
+    transform: scale(1.1);
+}
+.carde:hover{
+    transform: scale(1.1);
+}
+.cardeee {
+    background-color: rgb(250, 235, 19);
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 200px;
+    height: 150px;
+    margin-left: 95px;
+}
+
+.cardeee:hover {
+    transform: scale(1.1);
+}
+.info {
+    text-align: center;
+}
+
+
+.info .botton{
+    color: #3a6cf4;
+    margin: 10px;
+}
+.info .bottonn{
+    color: #f4b33a;
+    margin: 10px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 300px;
+}
+.contentt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 300px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #111111;
+    font-size: 8.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.title1{
+    display: flex;
+    
+    color: #111111;
+    font-size: 5.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.botton {
+    font-size: 52px;
+    width: 120px;
+    border: #000000 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.botton:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: #00aeff;
+    color: #fff;
+}
+.bottonn {
+    font-size: 52px;
+    width: 120px;
+    border: #000000 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bottonn:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: #ffbb00;
+    color: #fff;
+}
+.botton-red {
+    font-size: 52px;
+    width: 120px;
+    border: red 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: red;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 20px;
+}
+.botton-red:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: red;
+    color: #fff;
+}
+.botton-redd {
+    font-size: 52px;
+    width: 120px;
+    border: red 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: red;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 37px;
+}
+.botton-redd:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: red;
+    color: #fff;
+}
+.botton-orange {
+    font-size: 52px;
+    width: 120px;
+    border: orange 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: orange;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 20px;
+}
+.botton-orange:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: orange;
+    color: #fff;
+}
+.bottonn-yellow {
+    font-size: 52px;
+    width: 120px;
+    border: yellow 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: yellow;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 20px;
+}
+.bottonn-yellow:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: yellow;
+    color: #fff;
+}
+.bottonn-yelloww {
+    font-size: 52px;
+    width: 120px;
+    border: yellow 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: yellow;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 35px;
+}
+.bottonn-yelloww:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: yellow;
+    color: #fff;
+}
+.bottonn-green {
+    font-size: 52px;
+    width: 120px;
+    border: green 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: green;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 20px;
+}
+.bottonn-green:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: green;
+    color: #fff;
+}
+.bottonn-blue {
+    font-size: 52px;
+    width: 120px;
+    border: blue 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: blue;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 20px;
+}
+.bottonn-blue:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: blue;
+    color: #fff;
+}
+.bottonn-bluee {
+    font-size: 52px;
+    width: 120px;
+    border: blue 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: blue;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 23px;
+}
+.bottonn-bluee:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: blue;
+    color: #fff;
+}
+.bottonn-black {
+    font-size: 52px;
+    width: 120px;
+    border: black 4px solid;
+    border-radius: 12px;
+    color:#363636;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 20px;
+}
+.bottonn-black:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: black;
+    color: #fff;
+}
+.bottonn-pink {
+    font-size: 52px;
+    width: 120px;
+    border: pink 4px solid;
+    border-radius: 12px;
+    color:#000000;
+    background-color: pink;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 20px;
+}
+.bottonn-pink:hover{
+    font-size: 50px;
+    width: 140px;
+    transition: all 0.5s;
+    background-color: pink;
+    color: #fff;
+}
+
+
+/* cloock */
+
+.datetime{
+    color: #fff;
+    background: #10101E;
+    font-family: "Segoe UI" , sans-serif;
+    width: 340px;
+    padding: 15px 10px;
+    border: 3px solid #2E94E3;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+    position: absolute;
+}
+.datetime .siu{
+    color: #fff;
+    background: #10101E;
+    border: 0px;
+    transition: 0.5s;
+}
+
+.datetime:hover .siu{
+    background: #2E94E3;
+    
+}
+
+
+.datetime:hover{
+    background: #2E94E3;
+    box-shadow: 0 0 30px;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* footer */ 
+
+.container{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.container .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+.container .btn:hover a{
+    letter-spacing: 3px;
+}
+.container .btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.container .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+.container .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 50%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.container .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.container .btn:nth-child(1)::before,
+.container .btn:nth-child(1)::after {
+    background: #ff1571;
+    box-shadow: 0 0 5px #ff1571, 0 0 15px #ff1571, 0 0 30px #ff1571, 0 0 60px #ff1571;
+}
+.container .btn:nth-child(2)::before,
+.container .btn:nth-child(2)::after {
+    background: #2bd2ff;
+    box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff, 0 0 60px #2bd2ff;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="icon" href="images/Logo1.jpeg"> 
+   <link rel="stylesheet" href="en3.css">
+   <!-- Google Fonts CDN Link -->
+   <link
+   href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+   rel="stylesheet"
+ />
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bangi</title>
+</head>
+<body onload="intClock()"> 
+    
+<!---cloock-->    
+
+    <div class="datetime">
+        <button class="siu">
+        <div class="date">
+            
+            <span>Today is </span>
+            <span id="dayname">Day</span>
+            <span id="minutes">00</span>:<span id="Seconds">00</span>:<span id="hundredths">00</span>
+        </button>
+        </div>
+    </div>
+
+    <script>
+ 
+      function updateClock(){
+          var now = new Date();
+          var dname = now.getDay();
+
+          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          var ids = ["dayname"];
+          var values = [week[dname]];
+          for(var i = 0; i < ids.length; i++)
+          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+      }
+
+      function intClock(){
+        updateClock();
+        window.setInterval("updateClock()", 1)
+      }
+
+      /*
+
+      class state {
+          constructor(startTimestamp, difference, suspended) {
+              this.startTimestamp = startTimestamp;
+              this.difference = difference;
+              this.suspended = suspended;
+          }
+          static ready() {
+          return new state(null, 0, 0);
+      }
+      }
+
+      class stopwatch {
+          constructor(state) {
+              this.state = state;
+              this.requestAnimationId = null;
+              this.handleClickStart = this.handleClickStart.bind(this);
+              document
+              .getElementById("start")
+              .addEventListener("click", this.handleClickStart); 
+              this.handleClickStop = this.handleClickStart.bind(this);
+              document
+              .getElementById("stop")
+              .addEventListener("click", this.handleClickStart); 
+              this.handleClickReset = this.handleClickStart.bind(this);
+              document
+              .getElementById("reset")
+              .addEventListener("click", this.handleClickStart); 
+              this.tick = this.tick bind(this);
+              this.render;
+          }
+
+          static ready() {
+              return new stopwatch(state.ready());
+          }
+
+          setState(newState) {
+              this.state = { ...this.state, ...newState};
+              this.render();
+          }
+          tick(){
+              this.setState({
+                  difference: newDate(new Date() - this.state.startTimestamp)
+              });
+              this.requestAnimationId = requestAnimationFrame(this.tick);
+          }
+          handleClickStart() {
+              if (this.state.startTimestamp) {
+                  return;
+              }
+              this.setState({
+                  startTimestamp: new Date() - this.state.suspended,
+                  suspended: 0
+              })
+              this.requestAnimationId = requestAnimationFrame(this.tick);
+          }
+          handleClickStop() {
+              cancelAnimationFrame(this.requestAnimationId);
+              this.setState({
+                  startTimestamp: null,
+                  suspended: this.state.difference
+              });
+          }
+
+          handleClickRest() {
+             cancelAnimationFrame(this.requestAnimationId);
+             this.setState(state.ready());
+          }
+          render() {
+              const {difference} = this.state;
+              const seconds = (difference ? Math.floor(difference.getSeconds()) : 0) .toString().padStart(2, "0");
+              const minutes= (difference ? Math.floor(difference.getMinutes()) : 0) .toString().padStart(2, "0");
+              .document.getElementById("minutes").textContent = minutes;
+              .document.getElementById("seconds").textContent = seconds;
+              .document.getElementById("hundredths").textContent = hundredths;
+              const hundredths = (difference ? Math.floor(difference.getMilliseconds()) : 0) .toString().padStart(2, "0");
+          }
+      }
+      */
+
+
+      
+
+    </script>
+
+<!--Letters-->
+
+    <section class="cards" id="services">
+        <h2 class="title">Level C</h2>
+        <h3 class="title1">Digraph :</h3>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ch</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>sh</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>th</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>wh</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ph</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ck</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ay</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ai</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ey</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ue</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ee</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>oo</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ie</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i><h1>qu</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ow</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>er</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ew</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>oa</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i><h1>oe</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ar</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            
+            <div class="card">
+                <div class="icon">
+                    <i><h1>ur</h1></i>
+                </div>
+                <div class="info">
+                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+
+            
+    
+        </div>
+    
+    </section>
+
+
+
+    <section class="cards" id="services">
+        <h2 class="title"></h2>
+        <h3 class="title1">Numbers :</h3>
+        <section class="content">
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>1</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>2</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>3</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>4</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>5</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>6</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>7</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>8</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>9</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>10</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>11</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>12</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>13</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>14</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>15</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>16</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>17</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>18</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>19</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>20</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>21</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>22</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>23</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>24</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>25</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>26</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>27</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>28</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>29</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            <div class="car">
+                <div class="iconn">
+                    <i><h1>30</h1></i>
+                </div>
+                <div class="info">
+                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+    
+                </div>
+    
+            </div>
+            
+     </section>
+    </section>
+        
+            
+            <section class="cards" id="services">
+                <h2 class="title"></h2>
+                <h3 class="title1">colors :</h3>
+                <section class="content">
+                    <div class="card-red">
+                        <div class="iconnnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="botton-red"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-darkred">
+                        <div class="iconnnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="botton-darkred"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                      
+                    <div class="card-orange">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="botton-orange"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-darkorange">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="botton-darkorange"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-yellow">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-yellow"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-lightyellow">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-lightyellow"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-green">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-green"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-lightgreen">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-lightgreen"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-blue">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-blue"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-lightblue">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-lightblue"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-pink">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-pink"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-darkpink">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-darkpink"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    <div class="card-black">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-black"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                    
+                    <div class="card-white">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-white"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+
+                    <div class="card-purple">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-purple"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+
+                    <div class="card-brown">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-brown"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+            
+                    </div>
+                </section>
+            </section>   
+            
+        
+    
+                    <section class="cardsd">
+                        <h2 class="title"></h2>
+                        <h3 class="title1">Shapes :</h3>
+                        <section class="contentt">
+                            <div class="carde">
+                                <div class="iconnnn">
+                                    <i><h1></h1></i>
+                                </div>
+                                <div class="info">
+                                    <button class="bottonn-bluee"><i class="fa-solid fa-volume-high"></i></button>
+                    
+                                </div>
+                    
+                            </div>
+                            <div class="cardee">
+                                <div class="iconnn">
+                                    <i><h1></h1></i>
+                                </div>
+                                <div class="info">
+                                    <button class="botton-redd"><i class="fa-solid fa-volume-high"></i></button>
+                    
+                                </div>
+                    
+                            </div>
+                            <div class="cardeee">
+                                <div class="iconnn">
+                                    <i><h1></h1></i>
+                                </div>
+                                <div class="info">
+                                    <button class="bottonn-yelloww"><i class="fa-solid fa-volume-high"></i></button>
+                    
+                                </div>
+                    
+                            </div>
+                            <div class="cardeeee">
+                                <div class="iconnnn">
+                                    <i><h1></h1></i>
+                                </div>
+                                <div class="info">
+                                    <button class="bottonn-pinkk"><i class="fa-solid fa-volume-high"></i></button>
+                    
+                                </div>
+                    
+                            </div>
+                            <div class="cardeeeee">
+                                <div class="iconnn">
+                                    <i><h1></h1></i>
+                                </div>
+                                <div class="info">
+                                    <button class="bottonn-blackk"><i class="fa-solid fa-volume-high"></i></button>
+                    
+                                </div>
+                    
+                            </div>
+                            <div class="cardeeeee1">
+                                <div class="iconnn">
+                                    <i><h1></h1></i>
+                                </div>
+                                <div class="info">
+                                    <button class="bottonn-greenn"><i class="fa-solid fa-volume-high"></i></button>
+                    
+                                </div>
+                    
+                            </div>
+                            <div class="cardeeeee2">
+                                <div class="iconnn">
+                                    <i><h1></h1></i>
+                                </div>
+                                <div class="info">
+                                    <button class="bottonn-purplee"><i class="fa-solid fa-volume-high"></i></button>
+                    
+                                </div>
+                    
+                            </div>
+
+                        </section>
+                        </section>
+
+                        
+                    
+                            <div class="container">
+                                <div class="btn"><a href="">certificate</a></div>
+                                <div class="btn"><a href="home.html">Home</a></div>
+                            </div>
+                            
+                            
+
+</body>
