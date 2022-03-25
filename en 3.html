@@ -19,16 +19,20 @@
     
 <!---cloock-->    
 
-    <div class="datetime">
-        <button class="siu">
-        <div class="date">
-            
-            <span>Today is </span>
-            <span id="dayname">Day</span>
-            <span id="minutes">00</span>:<span id="Seconds">00</span>:<span id="hundredths">00</span>
-        </button>
-        </div>
+<div class="datetime">
+    <button class="siu" onclick="DAY.play();">
+    <div class="date">
+        
+        <span>Today is </span>
+        <span id="dayname">Day</span>
+        <span id="minutes">00</span>:<span id="Seconds">00</span>:<span id="hundredths">00</span>
+        <script>
+            const DAY = new Audio();
+            DAY.src = "images/havoc.mp3"
+        </script>
+    </button>
     </div>
+</div>
 
     <script>
  
@@ -145,99 +149,130 @@
                     <i><h1>ch</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="CH.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const CH = new Audio();
+                    CH.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>sh</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="SH.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const SH = new Audio();
+                    SH.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>th</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="TH.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const TH = new Audio();
+                    TH.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>wh</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="WH.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const WH = new Audio();
+                    WH.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ph</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="PH.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const PH = new Audio();
+                    PH.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ck</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="CK.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const CK = new Audio();
+                    CK.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ay</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="AY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const AY = new Audio();
+                    AY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ai</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="AI.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const AI = new Audio();
+                    AI.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ey</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="EY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const EY = new Audio();
+                    EY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ue</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="UE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
+                <script>
+                    const UE = new Audio();
+                    UE.src = "images/havoc.mp3"
+                </script>
     
             </div>
             <div class="card">
@@ -245,30 +280,39 @@
                     <i><h1>ee</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="EE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const EE = new Audio();
+                    EE.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>oo</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="OO.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const OO = new Audio();
+                    OO.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ie</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="IE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const IE = new Audio();
+                    IE.src = "images/havoc.mp3"
+                </script>
             </div>
 
             <div class="card">
@@ -276,60 +320,78 @@
                     <i><h1>qu</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="QU.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const QU = new Audio();
+                    QU.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ow</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="OW.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const OW = new Audio();
+                    OW.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>er</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="ER.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const ER = new Audio();
+                    ER.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>ew</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="EW.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const EW = new Audio();
+                    EW.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>oa</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="OA.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const OA = new Audio();
+                    OA.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="card">
                 <div class="icon">
                     <i><h1>oe</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="OE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const OE = new Audio();
+                    OE.src = "images/havoc.mp3"
+                </script>
             </div>
 
             <div class="card">
@@ -337,10 +399,13 @@
                     <i><h1>ar</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="AR.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const AR = new Audio();
+                    AR.src = "images/havoc.mp3"
+                </script>
             </div>
             
             <div class="card">
@@ -348,10 +413,13 @@
                     <i><h1>ur</h1></i>
                 </div>
                 <div class="info">
-                    <button class="botton"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="botton" onclick="UR.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const UR = new Audio();
+                    UR.src = "images/havoc.mp3"
+                </script>
             </div>
 
             
@@ -371,149 +439,196 @@
                     <i><h1>1</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="ONE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const ONE = new Audio();
+                    ONE.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>2</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWO.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const TWO = new Audio();
+                    TWO.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>3</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="THERE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const THERE = new Audio();
+                    THERE.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>4</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="FOUR.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const FOUR = new Audio();
+                    FOUR.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>5</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="FIVE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const FIVE = new Audio();
+                    FIVE.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>6</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="SEX.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const SEX = new Audio();
+                    SEX.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>7</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="SEVEN.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const SEVEN = new Audio();
+                    SEVEN.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>8</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="AYT.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const AYT = new Audio();
+                    AYT.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>9</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="NYN.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NYN = new Audio();
+                    NYN.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>10</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TEN.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const TEN = new Audio();
+                    TEN.src = "images/havoc.mp3"
+                </script>
             </div>
+
             <div class="car">
                 <div class="iconn">
                     <i><h1>11</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="ELEVE.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const ELEVE = new Audio();
+                    ELEVE.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>12</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWEL.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const TWEL = new Audio();
+                    TWEL.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>13</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="THERTY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const THERTY = new Audio();
+                   THERTY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>14</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="FORTY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const FORTY = new Audio();
+                   FORTY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>15</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="FITH.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
+                <script>
+                    const FITH = new Audio();
+                   FITH.src = "images/havoc.mp3"
+                </script>
     
             </div>
             <div class="car">
@@ -521,150 +636,195 @@
                     <i><h1>16</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="SEXTY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const SEXTY = new Audio();
+                   SEXTY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>17</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="SEVENTY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const SEVENTY = new Audio();
+                   SEVENTY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>18</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="AYTY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const AYTY = new Audio();
+                   AYTY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>19</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="NINTY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY = new Audio();
+                   NINTY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>20</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const TWENY = new Audio();
+                   TWENY.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>21</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY1.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY1 = new Audio();
+                   NINTY1.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>22</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY2.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY2 = new Audio();
+                   NINTY2.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>23</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY3.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY3 = new Audio();
+                   NINTY3.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>24</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY4.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY4 = new Audio();
+                   NINTY4.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>25</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY5.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY5 = new Audio();
+                   NINTY5.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>26</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY6.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY6 = new Audio();
+                   NINTY6.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>27</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY7.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY7 = new Audio();
+                   NINTY7.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>28</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY8.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY8 = new Audio();
+                   NINTY8.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>29</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="TWENY9.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const NINTY9 = new Audio();
+                   NINTY9.src = "images/havoc.mp3"
+                </script>
             </div>
             <div class="car">
                 <div class="iconn">
                     <i><h1>30</h1></i>
                 </div>
                 <div class="info">
-                    <button class="bottonn"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="bottonn" onclick="THERTYYY.play();"><i class="fa-solid fa-volume-high"></i></button>
     
                 </div>
-    
+                <script>
+                    const THERTYYY = new Audio();
+                   THERTYYY.src = "images/havoc.mp3"
+                </script>
             </div>
             
      </section>
@@ -680,20 +840,26 @@
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="botton-red"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="botton-red" onclick="C1.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C1 = new Audio();
+                           C1.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-darkred">
                         <div class="iconnnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="botton-darkred"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="botton-darkred" onclick="C2.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C2 = new Audio();
+                           C2.src = "images/havoc.mp3"
+                        </script>
                     </div>
                       
                     <div class="card-orange">
@@ -701,110 +867,143 @@
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="botton-orange"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="botton-orange" onclick="C3.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C3 = new Audio();
+                           C3.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-darkorange">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="botton-darkorange"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="botton-darkorange" onclick="C4.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C4 = new Audio();
+                           C4.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-yellow">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-yellow"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-yellow" onclick="C5.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C5 = new Audio();
+                           C5.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-lightyellow">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-lightyellow"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-lightyellow" onclick="C6.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C6 = new Audio();
+                           C6.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-green">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-green"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-green" onclick="C7.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C7 = new Audio();
+                           C7.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-lightgreen">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-lightgreen"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-lightgreen" onclick="C8.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C8 = new Audio();
+                           C8.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-blue">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-blue"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-blue" onclick="C9.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C9 = new Audio();
+                           C9.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-lightblue">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-lightblue"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-lightblue" onclick="C10.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C10 = new Audio();
+                           C10.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-pink">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-pink"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-pink" onclick="C11.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C11 = new Audio();
+                           C11.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-darkpink">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-darkpink"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-darkpink" onclick="C12.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C12 = new Audio();
+                           C12.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     <div class="card-black">
                         <div class="iconnn">
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-black"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-black" onclick="C13.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C13 = new Audio();
+                           C13.src = "images/havoc.mp3"
+                        </script>
                     </div>
                     
                     <div class="card-white">
@@ -812,10 +1011,13 @@
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-white"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-white" onclick="C14.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C14 = new Audio();
+                           C14.src = "images/havoc.mp3"
+                        </script>
                     </div>
 
                     <div class="card-purple">
@@ -823,10 +1025,13 @@
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-purple"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-purple" onclick="C15.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C15 = new Audio();
+                           C15.src = "images/havoc.mp3"
+                        </script>
                     </div>
 
                     <div class="card-brown">
@@ -834,89 +1039,114 @@
                             <i><h1></h1></i>
                         </div>
                         <div class="info">
-                            <button class="bottonn-brown"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="bottonn-brown" onclick="C16.play();"><i class="fa-solid fa-volume-high"></i></button>
             
                         </div>
-            
+                        <script>
+                            const C16 = new Audio();
+                           C16.src = "images/havoc.mp3"
+                        </script>
                     </div>
                 </section>
             </section>   
             
         
     
-                    <section class="cardsd">
-                        <h2 class="title"></h2>
-                        <h3 class="title1">Shapes :</h3>
-                        <section class="contentt">
-                            <div class="carde">
-                                <div class="iconnnn">
-                                    <i><h1></h1></i>
-                                </div>
-                                <div class="info">
-                                    <button class="bottonn-bluee"><i class="fa-solid fa-volume-high"></i></button>
-                    
-                                </div>
-                    
-                            </div>
-                            <div class="cardee">
-                                <div class="iconnn">
-                                    <i><h1></h1></i>
-                                </div>
-                                <div class="info">
-                                    <button class="botton-redd"><i class="fa-solid fa-volume-high"></i></button>
-                    
-                                </div>
-                    
-                            </div>
-                            <div class="cardeee">
-                                <div class="iconnn">
-                                    <i><h1></h1></i>
-                                </div>
-                                <div class="info">
-                                    <button class="bottonn-yelloww"><i class="fa-solid fa-volume-high"></i></button>
-                    
-                                </div>
-                    
-                            </div>
+            <section class="cardsd">
+                <h2 class="title"></h2>
+                <h3 class="title1">Shapes :</h3>
+                <section class="contentt">
+                    <div class="carde">
+                        <div class="iconnnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-bluee" onclick="BLUEE.play();"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+                        <script>
+                            const BLUEE = new Audio();
+                            BLUEE.src = "images/havoc.mp3"
+                        </script>
+                    </div>
+                    <div class="cardee">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="botton-redd" onclick="REDD.play();"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+                        <script>
+                            const REDD = new Audio();
+                            REDD.src = "images/havoc.mp3"
+                        </script>
+                    </div>
+                    <div class="cardeee">
+                        <div class="iconnn">
+                            <i><h1></h1></i>
+                        </div>
+                        <div class="info">
+                            <button class="bottonn-yelloww" onclick="YELLOWW.play();"><i class="fa-solid fa-volume-high"></i></button>
+            
+                        </div>
+                        <script>
+                            const YELLOWW = new Audio();
+                            YELLOWW.src = "images/havoc.mp3"
+                        </script>
+                    </div>
+
                             <div class="cardeeee">
                                 <div class="iconnnn">
                                     <i><h1></h1></i>
                                 </div>
                                 <div class="info">
-                                    <button class="bottonn-pinkk"><i class="fa-solid fa-volume-high"></i></button>
+                                    <button class="bottonn-pinkk" onclick="PINKK.play();"><i class="fa-solid fa-volume-high"></i></button>
                     
                                 </div>
-                    
+                                <script>
+                                    const PINKK = new Audio();
+                                    PINKK.src = "images/havoc.mp3"
+                                </script>
                             </div>
                             <div class="cardeeeee">
                                 <div class="iconnn">
                                     <i><h1></h1></i>
                                 </div>
                                 <div class="info">
-                                    <button class="bottonn-blackk"><i class="fa-solid fa-volume-high"></i></button>
+                                    <button class="bottonn-blackk" onclick="BLACKK.play();"><i class="fa-solid fa-volume-high"></i></button>
                     
                                 </div>
-                    
+                                <script>
+                                    const BLACKK = new Audio();
+                                    BLACKK.src = "images/havoc.mp3"
+                                </script>
                             </div>
                             <div class="cardeeeee1">
                                 <div class="iconnn">
                                     <i><h1></h1></i>
                                 </div>
                                 <div class="info">
-                                    <button class="bottonn-greenn"><i class="fa-solid fa-volume-high"></i></button>
+                                    <button class="bottonn-greenn" onclick="GREENN.play();"><i class="fa-solid fa-volume-high"></i></button>
                     
                                 </div>
-                    
+                                <script>
+                                    const GREENN = new Audio();
+                                    GREEN.src = "images/havoc.mp3"
+                                </script>
                             </div>
                             <div class="cardeeeee2">
                                 <div class="iconnn">
                                     <i><h1></h1></i>
                                 </div>
                                 <div class="info">
-                                    <button class="bottonn-purplee"><i class="fa-solid fa-volume-high"></i></button>
+                                    <button class="bottonn-purplee" onclick="PURPLEE.play();"><i class="fa-solid fa-volume-high"></i></button>
                     
                                 </div>
-                    
+                                <script>
+                                    const PURPLEE = new Audio();
+                                    PURPLEE.src = "images/havoc.mp3"
+                                </script>
                             </div>
 
                         </section>
