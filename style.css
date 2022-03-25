@@ -1806,32 +1806,45 @@ footer .wave#wave4 {
 
 /* media */
 
-@media (max-width:1023px){
+@media (max-width:641px){
     header{
-        padding: 12px 20px;
+        padding: 7px 100px;
+        
     }
 
     .navigation a{
-        padding-left: 10px;
-
+        
+        padding: 8px;
+        
 
     }
 
     .title{
-        font-size: 1.8em;
+        font-size: 0.7em;
     }
 
-    section{
-        padding: 80px 20px;
+    .back{
+        padding-left: 20px;
+        font-size: 0.7em;
+        
     }
 
-    .main-content h3{
-        font-size: 1.6em;
+    .back .loader .iframe{
+        width: 100px;
+        height: 10px;
+        padding-left: 300px;
+        margin-top: -90px;
     }
 
-    .content {
-        flex-direction: column;
-        align-items: center;
+    .back p{
+        font-size: 25px;
+        
+    } 
+    
+    .container{
+        width: 100px;
+        height: 20px;
+
     }
 }
 
